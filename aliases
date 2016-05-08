@@ -13,7 +13,6 @@ alias j="jobs"
 alias f="fg"
 alias b="bg"
 alias q="exit"
-alias ls="/bin/ls --color=auto"
 
 alias l="ls --color=auto -h"
 alias a="ls -ha"
