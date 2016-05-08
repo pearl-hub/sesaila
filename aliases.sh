@@ -9,11 +9,11 @@ alias e="$EDITOR"
 [ -e /usr/bin/htop ] && alias top="/usr/bin/htop"
 
 # Only the newer version of ls support the option --group-directories-first
-if ls --group-directories-first &> /dev/null
+if ls --group-directories-first --color=auto &> /dev/null
 then
     alias l="ls --group-directories-first --color=auto -h"
 else
-    alias l="ls --color=auto -h"
+    alias l="ls -h"
 fi
 
 # Add an "alert" alias for long running commands.  Use like so:
