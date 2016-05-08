@@ -9,8 +9,8 @@ alias e="$EDITOR"
 [ -e /usr/bin/htop ] && alias top="/usr/bin/htop"
 
 # Only the newer version of ls support the option --group-directories-first
-ls --group-directories-first &> /dev/null
-if [ "$?" -eq 0 ]; then
+if ls --group-directories-first &> /dev/null
+then
     alias l="ls --group-directories-first --color=auto -h"
 else
     alias l="ls --color=auto -h"
