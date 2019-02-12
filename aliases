@@ -63,4 +63,6 @@ alias moshx="LANG=en_US.UTF-8 mosh"
 alias webserver='python2.7 -m SimpleHTTPServer'
 alias webserver3='python -m http.server'
 
+alias cal2='cal -3 -m'
+
 #@@@@@@@@@@@@@@@@@@@
