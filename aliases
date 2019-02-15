@@ -65,4 +65,6 @@ alias webserver3='python -m http.server'
 
 alias cal2='cal -3 -m'
 
+alias calc='bc -li'
+
 #@@@@@@@@@@@@@@@@@@@
