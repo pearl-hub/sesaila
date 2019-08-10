@@ -67,4 +67,11 @@ alias cal2='cal -3 -m'
 
 alias calc='bc -li'
 
+alias whatthecommit="curl --silent --fail https://whatthecommit.com/index.txt"
+
+# For screenshot selection: sshot -s
+alias sshot="scrot -q 100 '%Y-%m-%d_%H%M%S-\$wx\$h.png' -e 'mv \$f ~/ 2>/dev/null'"
+
 #@@@@@@@@@@@@@@@@@@@
+
+# vim: set ft=sh
