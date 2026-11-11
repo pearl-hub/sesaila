@@ -7,6 +7,7 @@ else
     alias ls="ls --color=auto --group-directories-first -h"
 end
 type -q zoxide && alias cd="z"
+type -q bat && alias cat="bat"
 
 function open
     xdg-open $argv &
