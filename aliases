@@ -15,22 +15,22 @@ alias f="fg"
 alias b="bg"
 alias q="exit"
 
-alias l="ls --color=auto -h"
-alias a="ls -ha"
 alias d="date"
 alias p='pwd'
 alias h='hostname'
-alias t='tree'
-alias t1='t -L 1'
-alias t2='t -L 2'
-alias t2='t -L 3'
 
-alias ll="l -l"
-alias la="a -l"
+alias t='eza --tree --long --icons --git'
+alias t1='t --level=1'
+alias t2='t --level=2'
+alias t3='t --level=3'
+
+alias ll="ls -l"
+alias la="ll -a"
 
 # Allows to keep aliases in sudo
 alias sudo="sudo "
-#alias sudo="sudo -E"    # Useful to keep variables environment when you are root
+# Useful to keep variables environment when you are root
+#alias sudo="sudo -E"
 
 # ping the DNS google
 alias goo="ping 8.8.8.8"
@@ -41,37 +41,10 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias pgrep2="ps -ef | grep"
-
-# Substitute the stdin containing "\n" char with an actual return
-alias ret='sed '\''s/\\n/\n/g'\'
-
-# Looks up to the history
 alias hgrep='history | grep'
 
-# Open screen+irssi
-alias scrssi="screen -S scrssi -aARd -t irssi irssi; clear"
-
-# less case insensitive
-alias les="less -i"
-
-# Enhanced ssh for X11 forwarding and 256 colors
-alias sshx="TERM=xterm-256color LANG=en_US.UTF-8 ssh -Y"
-
-# Enhanced mosh for 256 colors
-alias moshx="LANG=en_US.UTF-8 mosh"
-
-alias webserver='python2.7 -m SimpleHTTPServer'
-alias webserver3='python -m http.server'
-
 alias cal2='cal -3 -m'
-
 alias calc='bc -li'
-
-alias whatthecommit="curl --silent --fail https://whatthecommit.com/index.txt"
-
-# For screenshot selection: sshot -s
-alias sshot="scrot -q 100 '%Y-%m-%d_%H%M%S-\$wx\$h.png' -e 'mv \$f ~/ 2>/dev/null'"
-
 #@@@@@@@@@@@@@@@@@@@
 
 # vim: set ft=sh
